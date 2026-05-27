@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Brand Redesign — Case Study. A complete visual overhaul project by Rajai GFX." />
+  <title>Full Brand Redesign — Rajai GFX</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    (function() {
+      var saved = localStorage.getItem('portfolio-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ── MOBILE NAV DRAWER ── -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation Menu">
+    <a href="../../#about">About</a>
+    <a href="../all-projects.html">Work</a>
+    <a href="../../#skills">Skills</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#contact">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="../../" class="nav-logo">
+      Rajai GFX <span class="nav-logo-dot"></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../../#about">About</a></li>
+      <li><a href="../all-projects.html">Work</a></li>
+      <li><a href="../../#skills">Skills</a></li>
+      <li><a href="../../#experience">Experience</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- Dark / Light Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1"  y1="12" x2="3"  y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <a href="../../#contact" class="nav-cta">Let's Talk</a>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       PROJECT HERO HEADER
+  ════════════════════════════════ -->
+  <section id="project-hero">
+    <div class="container">
+      <div class="project-back-link reveal">
+        <a href="../all-projects.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Back to Projects
+        </a>
+      </div>
+
+      <div class="project-hero-content">
+        <div class="project-category reveal">Brand Identity · 2024</div>
+        <h1 class="project-title reveal">
+          Full Brand Redesign — Company Name
+        </h1>
+        <p class="project-intro reveal">
+          A complete visual overhaul covering logo system, typography, color palette, brand guidelines, stationery, and digital asset library.
+        </p>
+      </div>
+
+      <div class="project-hero-meta reveal">
+        <div class="project-meta-item">
+          <div class="meta-label">Client</div>
+          <div class="meta-value">Company Name</div>
+        </div>
+        <div class="project-meta-item">
+          <div class="meta-label">Year</div>
+          <div class="meta-value">2024</div>
+        </div>
+        <div class="project-meta-item">
+          <div class="meta-label">Service</div>
+          <div class="meta-value">Brand Identity</div>
+        </div>
+        <div class="project-meta-item">
+          <div class="meta-label">Role</div>
+          <div class="meta-value">Lead Designer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       PROJECT GALLERY
+  ════════════════════════════════ -->
+  <section id="project-gallery">
+    <div class="container">
+      <div class="project-gallery-grid reveal-group">
+        <!-- Featured image -->
+        <div class="project-gallery-item project-gallery-featured reveal">
+          <img src="https://via.placeholder.com/1200x700?text=Project+Image+1" alt="Project featured image" style="width:100%; height:auto; display:block; border-radius: var(--radius-lg);">
+        </div>
+
+        <!-- Gallery row 2 -->
+        <div class="project-gallery-item reveal">
+          <img src="https://via.placeholder.com/500x500?text=Project+Image+2" alt="Project image 2" style="width:100%; height:auto; display:block; border-radius: var(--radius-lg);">
+        </div>
+        <div class="project-gallery-item reveal">
+          <img src="https://via.placeholder.com/500x500?text=Project+Image+3" alt="Project image 3" style="width:100%; height:auto; display:block; border-radius: var(--radius-lg);">
+        </div>
+
+        <!-- Gallery row 3 -->
+        <div class="project-gallery-item reveal">
+          <img src="https://via.placeholder.com/500x500?text=Project+Image+4" alt="Project image 4" style="width:100%; height:auto; display:block; border-radius: var(--radius-lg);">
+        </div>
+        <div class="project-gallery-item reveal">
+          <img src="https://via.placeholder.com/500x500?text=Project+Image+5" alt="Project image 5" style="width:100%; height:auto; display:block; border-radius: var(--radius-lg);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       PROJECT DETAILS
+  ════════════════════════════════ -->
+  <section id="project-details">
+    <div class="container">
+      <div class="project-details-grid">
+
+        <!-- Left: Challenge & Solution -->
+        <div class="project-details-col">
+          <div class="project-detail-block reveal">
+            <h3 class="project-detail-title">The Challenge</h3>
+            <p class="project-detail-text">
+              The client's existing brand identity had become outdated and no longer reflected their modern positioning in the market. They needed a complete visual refresh that would resonate with their target audience while maintaining brand recognition among existing customers.
+            </p>
+          </div>
+
+          <div class="project-detail-block reveal">
+            <h3 class="project-detail-title">The Solution</h3>
+            <p class="project-detail-text">
+              We developed a comprehensive brand strategy that included a modern logo redesign, refined typography system, vibrant yet professional color palette, and an extensive brand guideline document. The new identity maintained core brand values while positioning the company for future growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Deliverables -->
+        <div class="project-details-col">
+          <div class="project-detail-block reveal">
+            <h3 class="project-detail-title">Deliverables</h3>
+            <div class="project-deliverables">
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Logo Design &amp; Variations
+              </div>
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Typography System
+              </div>
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Color Palette &amp; Specs
+              </div>
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Brand Guidelines (40 pages)
+              </div>
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Stationery Design Suite
+              </div>
+              <div class="deliverable-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/></svg>
+                Digital Asset Library
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       RELATED PROJECTS
+  ════════════════════════════════ -->
+  <section id="project-related">
+    <div class="container">
+      <div class="section-eyebrow reveal">More Work</div>
+      <h2 class="section-heading reveal">Related <em>Projects</em></h2>
+
+      <div class="related-projects-grid reveal-group">
+
+        <!-- Related Project 1 -->
+        <a href="../project-2/project-2-packaging-design.html" class="related-project-card reveal">
+          <div class="related-project-thumb">
+            <div class="related-project-thumb-inner" style="background:linear-gradient(135deg,#E4EDEA,#D0E3DC);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="related-project-info">
+            <div class="related-project-category">Packaging</div>
+            <div class="related-project-title">Artisan Product Line</div>
+          </div>
+        </a>
+
+        <!-- Related Project 2 -->
+        <a href="../project-3/project-3-annual-report.html" class="related-project-card reveal">
+          <div class="related-project-thumb">
+            <div class="related-project-thumb-inner" style="background:linear-gradient(135deg,#EDE3ED,#E0D0E0);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="related-project-info">
+            <div class="related-project-category">Editorial</div>
+            <div class="related-project-title">Annual Report Design</div>
+          </div>
+        </a>
+
+        <!-- Related Project 3 -->
+        <a href="../project-4/project-4-logo-system.html" class="related-project-card reveal">
+          <div class="related-project-thumb">
+            <div class="related-project-thumb-inner" style="background:linear-gradient(135deg,#E8DFF0,#D8CDE8);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="related-project-info">
+            <div class="related-project-category">Logo Design</div>
+            <div class="related-project-title">Tech Startup Logo</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <span>© <span id="footer-year"></span> Rajai GFX, Lahore PK</span>
+    <a href="#project-hero">Back to top ↑</a>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

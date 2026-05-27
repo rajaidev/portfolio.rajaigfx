@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="All Projects — Rajai GFX. Complete portfolio of graphic design work across branding, print, and digital." />
+  <title>Projects — Rajai GFX</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    (function() {
+      var saved = localStorage.getItem('portfolio-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ── MOBILE NAV DRAWER ── -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation Menu">
+    <a href="../#about">About</a>
+    <a href="../projects/all-projects.html">Work</a>
+    <a href="../#skills">Skills</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#contact">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <a href="../" class="nav-logo">
+      Rajai GFX <span class="nav-logo-dot"></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../#about">About</a></li>
+      <li><a href="../projects/all-projects.html">Work</a></li>
+      <li><a href="../#skills">Skills</a></li>
+      <li><a href="../#experience">Experience</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- Dark / Light Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1"  y1="12" x2="3"  y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <a href="../#contact" class="nav-cta">Let's Talk</a>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       PAGE HEADER
+  ════════════════════════════════ -->
+  <section id="projects-page-header">
+    <div class="container">
+      <div class="section-eyebrow reveal">Portfolio</div>
+      <h1 class="section-heading reveal">
+        All <em>Projects</em>
+      </h1>
+      <p class="section-sub reveal" style="max-width:500px;">
+        A complete collection of design work spanning brand identity, packaging, print, editorial, and digital experiences.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       PROJECTS GRID
+  ════════════════════════════════ -->
+  <section id="projects-grid-section">
+    <div class="container">
+      <div class="projects-all-grid reveal-group">
+
+        <!-- Project 1 -->
+        <a href="project-1/project-1-brand-redesign.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#EDE8DF,#DDD5C5);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Brand Identity</div>
+            <div class="project-grid-title">Full Brand Redesign — Company Name</div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="project-2/project-2-packaging-design.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#E4EDEA,#D0E3DC);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Packaging</div>
+            <div class="project-grid-title">Artisan Product Line Packaging</div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="project-3/project-3-annual-report.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#EDE3ED,#E0D0E0);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Print &amp; Editorial</div>
+            <div class="project-grid-title">Annual Report Design</div>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="project-4/project-4-logo-system.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#E8DFF0,#D8CDE8);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Logo Design</div>
+            <div class="project-grid-title">Tech Startup Logo System</div>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="project-5/project-5-social-campaign.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#FFF4E6,#FFE8CC);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Social Media</div>
+            <div class="project-grid-title">Social Campaign Design Kit</div>
+          </div>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="project-6/project-6-motion-graphics.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#E6F5FF,#CCE8FF);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M16.51 9.35l-6.15 3.5a.72.72 0 0 1-1.08-.65V7.11c0-.67.73-1.11 1.08-.65l6.15 3.5c.36.2.36.92 0 1.39z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Motion Graphics</div>
+            <div class="project-grid-title">Brand Animation Explainer</div>
+          </div>
+        </a>
+
+        <!-- Project 7 -->
+        <a href="project-7/project-7-portfolio-website.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#F0E6FF,#E6CCFF);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Web Design</div>
+            <div class="project-grid-title">Portfolio Website Redesign</div>
+          </div>
+        </a>
+
+        <!-- Project 8 -->
+        <a href="project-8/project-8-nonprofit-identity.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#FFE6E6,#FFCCCC);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Branding</div>
+            <div class="project-grid-title">Non-Profit Identity System</div>
+          </div>
+        </a>
+
+        <!-- Project 9 -->
+        <a href="project-9/project-9-magazine-layout.html" class="project-card-grid reveal">
+          <div class="project-grid-thumb">
+            <div class="project-grid-thumb-inner" style="background:linear-gradient(135deg,#E6F7E6,#CCEFCC);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.3">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-grid-info">
+            <div class="project-grid-category">Editorial</div>
+            <div class="project-grid-title">Magazine Layout Design</div>
+          </div>
+        </a>
+
+      </div><!-- /.projects-all-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <span>© <span id="footer-year"></span> Rajai GFX, Lahore PK</span>
+    <a href="#projects-page-header">Back to top ↑</a>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
