@@ -1045,6 +1045,11 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
+  margin-top: 0;
+}
+
+.skills-tool-grid > .reveal {
+  margin: 0;
 }
 
 .skill-group-title {
@@ -1053,7 +1058,7 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
