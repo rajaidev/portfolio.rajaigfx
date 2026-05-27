@@ -305,7 +305,7 @@ a {
 
 .mobile-nav a {
   font-family: var(--serif);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: var(--ink);
   transition: color var(--transition-fast);
@@ -1393,16 +1393,25 @@ footer a:hover { color: var(--accent); }
   .hamburger { display: flex; }
   .mobile-nav { display: flex; }
 
+  .hero-grid { padding-top: 40px; }
   .hero-name { font-size: 3rem; }
 
   .projects-grid { grid-template-columns: 1fr; }
   .project-card-featured { grid-column: 1; }
 
-  .hero-stats { grid-template-columns: 1fr 1fr; }
-  .hero-stat-item:nth-child(3) {
-    grid-column: 1 / -1;
+  .hero-stats { grid-template-columns: 1fr; }
+  .hero-stat-item {
+    padding: 1.5rem 0;
     border-right: none;
-    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+  .hero-stat-item:last-child { border-bottom: none; }
+  .hero-stat-item:nth-child(3) {
+    grid-column: 1;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
   }
 
   .skills-tool-grid { grid-template-columns: 1fr; gap: 1.8rem; }
